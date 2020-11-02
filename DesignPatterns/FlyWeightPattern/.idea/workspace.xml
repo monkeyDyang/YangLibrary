@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="69551fec-e981-49c2-afaa-45e7a974fc81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/AbstractFactoryPattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/AbstractFactoryPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/FactoryProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/factory/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/factory/subfactory/AFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/factory/subfactory/BFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/product/a/ProductA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/product/a/impl/AOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/product/a/impl/ATwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/product/b/ProductB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/product/b/impl/BOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AbstractFactoryPattern/src/main/java/product/b/impl/BTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/AdapterPattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/src/main/java/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/src/main/java/yy/advanced/AdvancedMediaPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/src/main/java/yy/advanced/Mp4Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/src/main/java/yy/advanced/VlcPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/src/main/java/yy/player/AudioPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/src/main/java/yy/player/MediaAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/src/main/java/yy/player/MediaPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BridgePattern/BridgePattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BridgePattern/src/main/java/yy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BridgePattern/src/main/java/yy/color/DrawAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BridgePattern/src/main/java/yy/color/Green.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BridgePattern/src/main/java/yy/color/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BridgePattern/src/main/java/yy/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BridgePattern/src/main/java/yy/shape/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/BuilderPattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/burger/Burger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/burger/ChickenBurger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/burger/VegBurger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/drink/Coke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/drink/Drink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/drink/Pepsi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/packing/Packing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/packing/bottle/Bottle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/item/packing/wrapper/Wrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/meal/Meal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/yy/meal/MealBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/CompositePattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/yy/CompositePatternDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/yy/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorPattern/DecoratorPattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorPattern/src/main/java/yy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorPattern/src/main/java/yy/decorator/RedShapeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorPattern/src/main/java/yy/decorator/ShapeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorPattern/src/main/java/yy/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorPattern/src/main/java/yy/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorPattern/src/main/java/yy/shape/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FacadePattern/FacadePattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FacadePattern/src/main/java/yy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FacadePattern/src/main/java/yy/facade/ShapeMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FacadePattern/src/main/java/yy/facade/ShapeMarker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FacadePattern/src/main/java/yy/subsystem/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FacadePattern/src/main/java/yy/subsystem/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FacadePattern/src/main/java/yy/subsystem/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/src/main/java/com/yy/FactoryPatternDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/src/main/java/com/yy/factory/ShapeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/src/main/java/com/yy/products/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/src/main/java/com/yy/products/impl/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactoryPattern/src/main/java/com/yy/products/impl/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilterPattern/FilterPattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilterPattern/src/main/java/yy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilterPattern/src/main/java/yy/criteria/AndCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilterPattern/src/main/java/yy/criteria/Criteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilterPattern/src/main/java/yy/criteria/CriteriaFemale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilterPattern/src/main/java/yy/criteria/CriteriaMale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilterPattern/src/main/java/yy/criteria/CriteriaSingle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilterPattern/src/main/java/yy/criteria/OrCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilterPattern/src/main/java/yy/person/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlyWeightPattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/yy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/yy/factory/ShapeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/yy/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/yy/shape/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrototypePattern/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrototypePattern/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrototypePattern/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrototypePattern/PrototypePattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrototypePattern/src/main/java/yy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrototypePattern/src/main/java/yy/ShapeCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrototypePattern/src/main/java/yy/product/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrototypePattern/src/main/java/yy/product/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrototypePattern/src/main/java/yy/product/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonPattern/SingletonPattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonPattern/src/main/java/SingletonPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonPattern/src/main/java/yy/SingleDoubleCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonPattern/src/main/java/yy/SingleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonPattern/src/main/java/yy/SingleHungry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonPattern/src/main/java/yy/SingleLazySafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonPattern/src/main/java/yy/SingleLazyUnsafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonPattern/src/main/java/yy/SingleLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonPattern/src/main/java/yy/SingleObject.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ja22ERmpzkzY9H39ZFiWHoBakt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="yy.Client" />
+      <module name="FlyWeightPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="yy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69551fec-e981-49c2-afaa-45e7a974fc81" name="Default Changelist" comment="" />
+      <created>1604027672286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604027672286</updated>
+      <workItem from="1604027678622" duration="1627000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1604027776221">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604027776221" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1604029339871">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604029339871" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1604029339870">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604029339870" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1604029339870">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604029339870" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1604029339871">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604029339871" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604029339871">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604029339871" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604029339871">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604029339871" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604029339871">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604029339871" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604029339871">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604029339871" />
+    <state x="178" y="120" key="new project wizard" timestamp="1604029338226">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="120" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604029338226" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1604027927131">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604027927131" />
+  </component>
+</project>
