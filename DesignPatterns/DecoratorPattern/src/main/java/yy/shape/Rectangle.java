@@ -1,0 +1,7 @@
+package yy.shape;
+
+public class Rectangle implements Shape {
+    public void draw() {
+        System.out.println("Rectangle");
+    }
+}
