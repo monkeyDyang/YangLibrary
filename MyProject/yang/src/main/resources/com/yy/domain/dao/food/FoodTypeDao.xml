@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yy.domain.dao.food.FoodTypeDao">
+    <resultMap id="FoodTypeMap" type="com.yy.domain.model.entity.food.FoodType">
+        <id property="ID" column="id" />
+        <result property="typeName" column="type_name" />
+    </resultMap>
+
+    <!--    select * from food_type-->
+    <select id="getList" resultMap="FoodTypeMap" resultType="com.yy.domain.model.entity.food.FoodType">
+        select id,type_name from food_type
+    </select>
+
+    <!--    select * from food_type where id = #{id}-->
+    <select id="getByID" resultMap="FoodTypeMap" resultType="com.yy.domain.model.entity.food.FoodType" parameterType="Integer">
+        select id,type_name from food_type where id = #{id}
+    </select>
+
+    <!--    select * from food where food_type = #{name}-->
+    <select id="getByName" resultMap="FoodTypeMap" resultType="com.yy.domain.model.entity.food.FoodType" parameterType="String">
+        select id,type_name from food_type where type_name = #{name}
+    </select>
+
+    <!--    insert into food(id,food_name,weight,is_include,is_del) value(...)-->
+    <!--    自增主键useGeneratedKeys、keyProperty-->
+    <insert id="insertFoodType" useGeneratedKeys="true" keyProperty="ID" parameterType="com.yy.domain.model.entity.food.FoodType">
+        insert into food_type(id,type_name)
+        values (#{foodType.ID,jdbcType=INTEGER},#{foodType.typeName,jdbcType=VARCHAR})
+    </insert>
+
+    <!--    update food set xx=xx where id = #{ID}-->
+    <update id="updateFoodTypeByID" >
+        update food_type
+        <set>
+            <if test="foodType.typeName != null">
+                type_name = #{foodType.typeName,jdbcType=VARCHAR},
+            </if>
+        </set>
+        <choose>
+            <when test="id != null">
+                where id = #{id}
+            </when>
+            <otherwise>
+                where 1 = 0
+            </otherwise>
+        </choose>
+    </update>
+
+    <!--    delete from food where id = #{ID}-->
+    <delete id="deleteFoodType">
+        delete from food_type
+        <choose>
+            <when test="id != null">
+                where id = #{id}
+            </when>
+            <otherwise>
+                where 1 = 0
+            </otherwise>
+        </choose>
+    </delete>
+
+</mapper>
