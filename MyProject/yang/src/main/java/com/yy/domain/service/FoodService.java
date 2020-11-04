@@ -1,9 +1,7 @@
 package com.yy.domain.service;
 
 import com.yy.domain.model.entity.food.Food;
-import com.yy.domain.model.view.food.FoodIDView;
 import com.yy.domain.model.view.food.FoodResultView;
-import com.yy.domain.model.view.food.FoodUpdateView;
 
 import java.util.List;
 

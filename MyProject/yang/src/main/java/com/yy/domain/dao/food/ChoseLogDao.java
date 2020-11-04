@@ -14,4 +14,6 @@ public interface ChoseLogDao {
     List<ChoseLog> getListByFoodID(@Param("foodID")Integer foodID);
 
     List<ChoseLog> getListByFoodTypeID(@Param("foodTypeID") Integer foodTypeID);
+
+    int insertChoseLog(@Param("choseLog") ChoseLog choseLog);
 }

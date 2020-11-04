@@ -5,6 +5,8 @@ import com.yy.yang.AbstractSpringTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -33,5 +35,13 @@ class ChoseLogDaoTest extends AbstractSpringTest {
     void getListByFoodTypeID() {
         List<ChoseLog> list = dao.getListByFoodTypeID(1);
         assertTrue(list.size()> 0);
+    }
+
+    @Test
+    void insertChoseLog(){
+
+        ChoseLog choseLog = new ChoseLog(0,3,1,new Date());
+        int res = dao.insertChoseLog(choseLog);
+        assertTrue(res == 1);
     }
 }

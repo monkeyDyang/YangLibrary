@@ -1,4 +1,4 @@
-package com.yy.domain.model.entity.food;
+package com.yy.domain.model.view.food;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,11 +9,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ChoseLog {
-
-    // 自增主键id
-    private Integer ID;
-
+public class ChoseLogView {
     // 外键食物id
     private Integer foodID;
 
