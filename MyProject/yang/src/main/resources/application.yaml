@@ -1,6 +1,6 @@
 server:
   # 端口
-  port: 8081
+  port: 1234
 
 spring:
   # 数据库连接
@@ -9,6 +9,9 @@ spring:
     url: jdbc:mysql://localhost:3306/yangdb?characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: root
+  resources:
+    # 静态资源访问路径
+    static-locations: classpath:static/,classpath:resources/
 
 # Mybatis配置
 mybatis:
@@ -19,7 +22,7 @@ mybatis:
     map-underscore-to-camel-case: true
 
 # 日志配置 日志级别 trace<debug<info<warn<error
-logging:
-  level.root: warn
-  llevel.com.yy: warn
+#logging:
+#  level.root: warn
+#  level.com.yy: warn
 #  pattern.console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50}: %msg%n"
