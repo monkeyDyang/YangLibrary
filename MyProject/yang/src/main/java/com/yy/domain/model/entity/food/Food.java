@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Food {
+public class Food implements Cloneable {
 
     // 自增ID id
     private Integer ID;
@@ -24,4 +24,14 @@ public class Food {
     // 是否删除 is_del
     private Integer isDel;
 
+    @Override
+    public Object clone(){
+        Object clone = null;
+        try {
+            clone = super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return clone;
+    }
 }

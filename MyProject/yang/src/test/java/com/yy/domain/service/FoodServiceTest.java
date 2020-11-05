@@ -16,13 +16,25 @@ class FoodServiceTest extends AbstractSpringTest {
     @Autowired
     private FoodService foodService;
 
+    void show(List<Food> list){
+        for (Food food: list){
+            System.out.println(food.toString());
+        }
+    }
+
     @Test
     void getAll() {
-        List<FoodResultView> list = foodService.getAll();
+        List<FoodResultView> list = foodService.getAllView();
 
         int res = list.size();
         for (FoodResultView food:list)
             System.out.println(food.toString());
         assertEquals(2,res);
+    }
+
+    @Test
+    void getWeightNotZero(){
+        List<Food> list = foodService.getWeightNotZero();
+        show(list);
     }
 }

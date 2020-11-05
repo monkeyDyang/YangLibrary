@@ -19,6 +19,10 @@
             select <include refid="base_all_column"></include> from food
     </select>
 
+    <select id="getWeightNotZero" resultMap="FoodMap" resultType="com.yy.domain.model.entity.food.Food">
+        select * from food where weight != 0;
+    </select>
+    
 <!--    select * from food where id = #{id}-->
     <select id="getByID" resultMap="FoodMap" resultType="com.yy.domain.model.entity.food.Food" parameterType="Integer">
         select
@@ -42,7 +46,7 @@
     <insert id="insertFood" useGeneratedKeys="true" keyProperty="ID" parameterType="com.yy.domain.model.entity.food.Food">
         insert into food(<include refid="base_all_column"></include>)
         values (#{food.ID,jdbcType=INTEGER},#{food.foodName,jdbcType=VARCHAR},1,0,0)
-    </insert>
+</insert>
 
 <!--    update food set xx=xx where id = #{ID}-->
     <update id="updateFoodByID" >

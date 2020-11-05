@@ -58,6 +58,17 @@ class FoodDaoTest extends AbstractSpringTest {
     }
 
     @Test
+    void insertFoodList(){
+
+        Food food = new Food(0,"食物",1,0,0);
+        for (int i = 1; i<=10;i++){
+            food.setWeight(i);
+            food.setFoodName("食物" + i);
+            dao.insertFood(food);
+        }
+    }
+
+    @Test
     void updateFood(){
 
         FoodUpdateView view = new FoodUpdateView("食物change",1,0,0);
@@ -106,4 +117,6 @@ class FoodDaoTest extends AbstractSpringTest {
         }
 
     }
+
+
 }

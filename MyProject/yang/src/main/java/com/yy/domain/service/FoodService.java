@@ -8,7 +8,13 @@ import java.util.List;
 public interface FoodService {
 
     // 获取所有
-    List<FoodResultView> getAll();
+    List<FoodResultView> getAllView();
+
+    // 获取所有
+    List<Food> getAll();
+
+    // 获取权值不为0的
+    List<Food> getWeightNotZero();
 
     // 获取单个Food
     FoodResultView getByID(Integer id);

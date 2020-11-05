@@ -14,6 +14,9 @@ public interface FoodDao {
     // 获取全部
     List<Food> getList();
 
+    // 获取权值不为0的
+    List<Food> getWeightNotZero();
+
     // 根据ID获取单个Food
     Food getByID(@Param("id") Integer id);
 

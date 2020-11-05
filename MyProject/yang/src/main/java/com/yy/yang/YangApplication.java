@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @MapperScan(value = "com.yy.domain.dao")
-@ComponentScan("com.yy")
+@ComponentScan(basePackages = {"com.yy"})
 public class YangApplication {
 
     public static void main(String[] args) {

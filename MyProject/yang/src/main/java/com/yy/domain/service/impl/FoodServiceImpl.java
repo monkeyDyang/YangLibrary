@@ -13,10 +13,10 @@ import java.util.List;
 @Service
 public class FoodServiceImpl implements FoodService {
 
-    private final FoodDao foodMapper;
+    private final FoodDao foodDao;
 
     public FoodServiceImpl(FoodDao foodMapper) {
-        this.foodMapper = foodMapper;
+        this.foodDao = foodMapper;
     }
 
     // Food 转化成 FoodResultView
@@ -45,9 +45,9 @@ public class FoodServiceImpl implements FoodService {
     }
 
     @Override
-    public List<FoodResultView> getAll() {
+    public List<FoodResultView> getAllView() {
 
-        List<Food> list = foodMapper.getList();
+        List<Food> list = foodDao.getList();
         List<FoodResultView> results = new ArrayList<>();
         // 类型转化
         for (Food food:list){
@@ -58,13 +58,23 @@ public class FoodServiceImpl implements FoodService {
     }
 
     @Override
+    public List<Food> getAll() {
+        return foodDao.getList();
+    }
+
+    @Override
+    public List<Food> getWeightNotZero() {
+        return foodDao.getWeightNotZero();
+    }
+
+    @Override
     public FoodResultView getByID(Integer id) {
-        return TransformFood(foodMapper.getByID(id));
+        return TransformFood(foodDao.getByID(id));
     }
 
     @Override
     public FoodResultView getByName(String Name) {
-        return TransformFood(foodMapper.getByName(Name));
+        return TransformFood(foodDao.getByName(Name));
     }
 
 
@@ -72,14 +82,14 @@ public class FoodServiceImpl implements FoodService {
     public int ChangeFoodName(Integer id, String Name) {
         FoodUpdateView updateView = new FoodUpdateView();
         updateView.setFoodName(Name);
-        return foodMapper.updateFoodByID(updateView,id);
+        return foodDao.updateFoodByID(updateView,id);
     }
 
     @Override
     public int ChangeWeightToZero(Integer id) {
         FoodUpdateView updateView = new FoodUpdateView();
         updateView.setWeight(0);
-        return foodMapper.updateFoodByID(updateView,id);
+        return foodDao.updateFoodByID(updateView,id);
     }
 
     @Override
@@ -95,11 +105,11 @@ public class FoodServiceImpl implements FoodService {
             entities.add(entity);
         }
 
-        return foodMapper.updateList(entities);
+        return foodDao.updateList(entities);
     }
 
     @Override
     public int softDeleteFood(Integer id) {
-        return foodMapper.softDeleteFood(id);
+        return foodDao.softDeleteFood(id);
     }
 }
