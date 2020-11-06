@@ -12,6 +12,17 @@ spring:
   resources:
     # 静态资源访问路径
     static-locations: classpath:static/,classpath:resources/
+  thymeleaf:
+    # 页面热部署
+    cache: true
+  # 热部署生效
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  redis:
+    # 服务地址
+    host: 127.0.0.1
 
 # Mybatis配置
 mybatis:

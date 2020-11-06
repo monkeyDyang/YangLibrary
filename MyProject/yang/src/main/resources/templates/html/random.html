@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>random</title>
+    <script th:src="@{/js/jquery.min.js}"></script>
+</head>
+<script>
+    function get() {
+        $.ajax({
+            url:"/random/food",
+            success:function f(data) {
+                console.log(data);
+                $("#result").text(data.foodName);
+            }
+        });
+    }
+</script>
+<body>
+<h1>Get</h1>
+<button id="btn-get" onclick="get()">get a food</button>
+Result:<h1 id="result"></h1>
+</body>
+</html>

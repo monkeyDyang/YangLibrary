@@ -2,6 +2,7 @@ package com.yy.domain.service.impl;
 
 import com.yy.domain.dao.food.FoodDao;
 import com.yy.domain.model.entity.food.Food;
+import com.yy.domain.model.view.food.FoodAddView;
 import com.yy.domain.model.view.food.FoodResultView;
 import com.yy.domain.model.view.food.FoodUpdateView;
 import com.yy.domain.service.FoodService;
@@ -69,14 +70,28 @@ public class FoodServiceImpl implements FoodService {
 
     @Override
     public FoodResultView getByID(Integer id) {
-        return TransformFood(foodDao.getByID(id));
+
+        Food food = foodDao.getByID(id);
+        if (food == null)
+            return null;
+        return TransformFood(food);
     }
 
     @Override
     public FoodResultView getByName(String Name) {
-        return TransformFood(foodDao.getByName(Name));
+
+        Food food = foodDao.getByName(Name);
+        if (food == null)
+            return null;
+        return TransformFood(food);
     }
 
+    @Override
+    public int saveFood(FoodAddView view) {
+        Food food = new Food();
+        food.setFoodName(view.getFoodName());
+        return foodDao.insertFood(food);
+    }
 
     @Override
     public int ChangeFoodName(Integer id, String Name) {

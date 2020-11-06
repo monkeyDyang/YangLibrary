@@ -19,14 +19,13 @@ class RandomContextTest extends AbstractSpringTest {
 
     @Autowired
     private FoodService service;
-    @Autowired
-    private RandomContext context;
 
     @Test
     void execute() throws Exception {
 
+        RandomContext context = new RandomContext(new YangRandom(),this.service);
         List<Food> resultList = new ArrayList<>();
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             List<Food> list = service.getWeightNotZero();
             Food result = context.execute(list);
             resultList.add(result);

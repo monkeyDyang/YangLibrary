@@ -1,6 +1,7 @@
 package com.yy.domain.service;
 
 import com.yy.domain.model.entity.food.Food;
+import com.yy.domain.model.view.food.FoodAddView;
 import com.yy.domain.model.view.food.FoodResultView;
 
 import java.util.List;
@@ -21,6 +22,9 @@ public interface FoodService {
 
     // 获取单个Food
     FoodResultView getByName(String Name);
+
+    // 新增Food
+    int saveFood(FoodAddView view);
 
     // 修改FoodName
     int ChangeFoodName(Integer id, String Name);
