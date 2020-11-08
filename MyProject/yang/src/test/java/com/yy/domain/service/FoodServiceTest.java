@@ -24,17 +24,31 @@ class FoodServiceTest extends AbstractSpringTest {
 
     @Test
     void getAll() {
-        List<FoodResultView> list = foodService.getAllView();
+        List<Food> list = foodService.getAll();
 
         int res = list.size();
-        for (FoodResultView food:list)
+        for (Food food:list)
             System.out.println(food.toString());
-        assertEquals(2,res);
+        assertTrue(res > 0);
     }
+
+    @Test
+    void getAllView(){
+        foodService.getAllView();
+    }
+
 
     @Test
     void getWeightNotZero(){
         List<Food> list = foodService.getWeightNotZero();
         show(list);
+    }
+
+    @Test
+    void getByID(){
+        FoodResultView food = foodService.getByID(15);
+        FoodResultView food2 = foodService.getByID(14);
+        FoodResultView food3 = foodService.getByID(13);
+        System.out.println(food);;
     }
 }

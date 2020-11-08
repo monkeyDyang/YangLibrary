@@ -2,6 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yy.domain.dao.food.FoodDao">
+    <cache eviction="FIFO" readOnly="true" flushInterval="6000" size="512"/>
+
     <resultMap id="FoodMap" type="com.yy.domain.model.entity.food.Food">
         <id property="ID" column="id" />
         <result property="foodName" column="food_name" />

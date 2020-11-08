@@ -20,19 +20,21 @@ class FoodDaoTest extends AbstractSpringTest {
     void getList() {
 
         List<Food> list = dao.getList();
-
+//        List<Food> list2 = dao.getList();
+//        Food food1 = dao.getByID(18);
         int res = list.size();
         for (Food food:list)
             System.out.println(food.getFoodName());
-        assertEquals(2,res);
+        assertEquals(12,res);
     }
 
     @Test
     void getByID(){
 
-        Integer id = 2;
+        Integer id = 18;
 
         Food food = dao.getByID(id);
+//        Food food2 = dao.getByID(id);
 
         assertEquals(id,food.getID());
     }

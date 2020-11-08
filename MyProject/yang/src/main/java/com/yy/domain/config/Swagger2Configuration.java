@@ -2,6 +2,7 @@ package com.yy.domain.config;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -12,7 +13,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /*  Swagger2 配置类*/
 @Configurable
-
+@Component
+@EnableSwagger2
 public class Swagger2Configuration {
     //api接口包扫描路径
     public static final String SWAGGER_SCAN_BASE_PACKAGE = "com.yy.domain.controller";

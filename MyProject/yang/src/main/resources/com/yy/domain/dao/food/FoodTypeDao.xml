@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yy.domain.dao.food.FoodTypeDao">
+    <cache />
     <resultMap id="FoodTypeMap" type="com.yy.domain.model.entity.food.FoodType">
         <id property="ID" column="id" />
         <result property="typeName" column="type_name" />

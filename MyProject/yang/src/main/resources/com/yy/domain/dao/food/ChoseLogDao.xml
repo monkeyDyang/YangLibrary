@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yy.domain.dao.food.ChoseLogDao">
-   <resultMap id="ChoseLogMap" type="com.yy.domain.model.entity.food.ChoseLog">
+    <cache />
+    <resultMap id="ChoseLogMap" type="com.yy.domain.model.entity.food.ChoseLog">
        <id column="id" property="ID"/>
        <result column="food_id" property="foodID"/>
        <result column="food_type_id" property="foodTypeID"/>
        <result column="chose_time" property="choseTime"/>
-   </resultMap>
+    </resultMap>
     <select id="getList" resultMap="ChoseLogMap" resultType="com.yy.domain.model.entity.food.ChoseLog">
         select * from choselog;
     </select>

@@ -1,5 +1,6 @@
 package com.yy.domain.application.random;
 
+import com.yy.domain.exception.Asserts;
 import com.yy.domain.model.entity.food.Food;
 import com.yy.domain.service.FoodService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,7 @@ public class RandomContext {
         Food result = algorithm.getRandomResult(foods);
 
         if (result == null)
-            throw new Exception("未获取到随机结果");
+            Asserts.fail("未获取到随机结果");
 
         List<Food> others = foodService.getAll();
         others.remove(result);
